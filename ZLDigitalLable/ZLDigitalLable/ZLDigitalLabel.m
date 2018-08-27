@@ -122,7 +122,7 @@
         width += [strArr[i] getDigitalWidthWithDigitalWidth:digitalWidth dotWidth:fontSize * DOT_FONTWIDTH_RATE];
     }
     
-    CGPoint center = self.center;
+    CGPoint center  = self.center;
     CGRect frame    = CGRectMake(0,0, width, self.frame.size.height);
     if (self.autoWidth) {
         self.frame  = frame;

@@ -22,7 +22,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.contentLb.autoWidth = YES;
+    self.contentLb.autoWidth    = YES;
+    self.rangeLb.autoWidth      = YES;
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -42,12 +43,12 @@
     [paragraphStyle setLineSpacing:6];
     [attributedString addAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:NSMakeRange(0, str.length)];
     [self.valueLb setAttributedText:attributedString];
-    
 }
 
 
 - (IBAction)acitonAutoWidth:(id)sender {
     self.contentLb.autoWidth = !self.contentLb.autoWidth;
+    
 }
 
 
